@@ -1,0 +1,32 @@
+select id from info order by id desc ;
+
+alter table info add email varchar(40);
+
+select * from info;
+
+update info set email="gm3186126@gmail.com" where id=1;
+SET SQL_SAFE_UPDATES = 0;
+
+UPDATE info
+SET email = CONCAT(name, '@delhi.com');
+
+create table men(name varchar(25),age int );
+
+insert into men values ("baba",24);
+
+select * from men;
+
+-- use -- to add column-- 
+alter table men 
+add city varchar(20);
+
+--  add data to column using update
+update men
+set city="delhi" where age=24;
+
+select distinct class from info;
+
+
+
+
+

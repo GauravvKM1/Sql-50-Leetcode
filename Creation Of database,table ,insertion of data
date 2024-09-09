@@ -1,0 +1,8 @@
+create database student;
+use student;
+
+create table info ( id int primary key, name varchar(50),
+class varchar(10) );
+
+insert into info (id,name,class)values (4,"nim","ist"),(5,"sim","sec"),(6,"rim","ist");
+select * from info;
